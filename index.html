@@ -1,164 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="zxx">
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Tiago Mendes Portfolio</title>
 		<link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
-
-		<style>
-			.logo{
-				max-width: 74px;
-				max-height: auto;
-			}
-			div{
-				/*border: 1px solid;*/
-			}
-			h1, h5{
-				text-align: right;
-			}
-			.borda_inferior{
-				border-bottom: 2px solid #7d97ad;
-			}
-			.img_central{
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				max-width: 100%;
-				max-height: auto;
-			}
-			.branco_top{
-				margin-top: 10px;
-			}
-
-			.card {
-			    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    			transition: 0.3s;
-    			margin:6%;
-    			/*width: 50rem;*/
-			}
-
-			.card:hover {
-    			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-			}
-
-			.card-body {
-    			padding:8px;
-			}
-			.fundo{
-				background-color: #6a539b;
-			}
-
-			@media screen and (max-width: 767px){
-				h1,h5{
-					text-align: center;
-				}
-				.logo{
-					margin-left: auto;
-					margin-right: auto;
-					display: block;
-				}
-				.card{
-					max-width: 300px;
-				}
-			}
-			@media screen and (min-width: 1024px){
-				.container{
-					width: 1024px;
-					margin-left: auto;
-					margin-right: auto;
-				}
-			}
-
-		</style>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
 	</head>
 
 	<body>
 		<div class="container">
 
-			<!-- cabeçalho -->
-			<header class="row borda_inferior branco_top">
+			<!-- header section -->
+			<header class="row bord-bottom space-top">
 				<div class="col-2 col-sm-2 col-md-2">
-					<img class="logo" src="images/udacity.svg" alt="udacity logo">
+					<a href="https://br.udacity.com/" target="_blank">
+						<img class="logo" src="images/udacity.svg" alt="udacity logo">
+					</a>
 				</div>
-				<div class="col-10 col-sm-10 col-md-10">
+				<div class="col-10 col-sm-10 col-md-10 font-color2">
 					<h1>Tiago Mendes</h1>
-					<h5>FRONT-END NINJA v1.0</h5>	
+					<h5>
+						<a href="mailto:tetigo@gmail.com">
+							<i class="glyphicon glyphicon-envelope"></i>
+						</a> 
+						FRONT-END NINJA v1.0
+					</h5>
 				</div>
 			</header>
-			
-			<!-- class="fundo" seção principal -->
-				<main>
-				<section class="row branco_top">
-					<div class="fundo">
-						<img class="img_central" src="images/aplica.jpg" alt="responsive image">
+
+			<!-- main section -->
+			<main>
+				<div class="row space-top">
+					<div class="back-color">
+						<img class="img-block" src="images/aplica.jpg" alt="responsive image">
 					</div>
-				</section>
 
+					<div class="font-color1">
+						<h3>Featured Works</h3>
+					</div>
 
-				<!-- cards -->
-				<section class="row branco_top">
-					<h3>Featured Works</h3>
-
-
-					
+					<!-- cards -->
 					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
-			            <div class="card">
-			                <img class="img-responsive" src="images/web.jpg" alt="image project 1">
-			                <div class="card-body">
-			                    <h4 class="">Udacity Project 01</h4>
-			                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
-			                    <a href="#" class="btn btn-primary">Project link</a>
-			                </div>
-			            </div>
-			        </div>
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 1 - Movie Trailers">
+				            <div class="card-body font-color2">
+				                <h4>Movies Trailers</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
 
-					
 					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
-			            <div class="card">
-			                <img class="img-responsive" src="images/web.jpg" alt="image project 1">
-			                <div class="card-body">
-			                    <h4 class="">Udacity Project 01</h4>
-			                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
-			                    <a href="#" class="btn btn-primary">Project link</a>
-			                </div>
-			            </div>
-			        </div>
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 2 - Portfolio">
+				            <div class="card-body font-color2">
+				                <h4>Portfolio</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
 
-					
 					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
-			            <div class="card">
-			                <img class="img-responsive" src="images/web.jpg" alt="image project 1">
-			                <div class="card-body">
-			                    <h4 class="">Udacity Project 01</h4>
-			                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
-			                    <a href="#" class="btn btn-primary">Project link</a>
-			                </div>
-			            </div>
-			        </div>
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 3 - Log View">
+				            <div class="card-body font-color2">
+				                <h4>Log View</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
 
-					
 					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
-			            <div class="card">
-			                <img class="img-responsive" src="images/web.jpg" alt="image project 1">
-			                <div class="card-body">
-			                    <h4 class="">Udacity Project 01</h4>
-			                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
-			                    <a href="#" class="btn btn-primary">Project link</a>
-			                </div>
-			            </div>
-			        </div>
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 4 - Catalog Items">
+				            <div class="card-body font-color2">
+				                <h4>Catalog Items</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
 
-					
+					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 5 - Neighborhood Map">
+				            <div class="card-body font-color2">
+				                <h4>Neighborhood Map</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
+
+					<div class="col-12 col-md-4 col-sm-6 col-lg-4">
+				        <div class="card">
+				            <img class="img-responsive" src="images/web.jpg" alt="Image Project 6 - Linux Server Configuration">
+				            <div class="card-body font-color2">
+				                <h4>Linux Server Configuration</h4>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, massa non ullamcorper rutrum, velit arcu aliquet lacus, a facilisis ex lorem at massa. Praesent id varius lacus, eget ornare est.</p>
+				                <a href="#" class="btn btn-primary">Project link</a>
+				            </div>
+				        </div>
+				    </div>
 
 
-
-
-
-				</section>
+				</div>
 			</main>
+
+			<!-- footer section -->
+			<footer>
+    			<div class="email text-center space-top back-color">© 2018 Copyright:
+      				<a href="mailto:tetigo@gmail.com">Tiago Mendes</a>
+    			</div>
+  			</footer>
+
 		</div>
 	</body>
 </html>
+
